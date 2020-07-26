@@ -28,37 +28,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <svg
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
-      viewBox="0 0 600 600"
-      enable-background="new 0 0 600 600"
-      xml:space="preserve"
-    >
-      <g id="D">
-        <path
-          d="M82.6,79.5h111.6c30.5,0,55.9,6.2,76.1,18.5c20.2,12.3,36.3,28.8,48.4,49.3c12.1,20.5,20.6,44,25.5,70.2
-		c4.9,26.3,7.4,53.4,7.4,81.3c0,31.2-3.1,60.3-9.3,87.2c-6.2,26.9-15.8,50.2-28.9,69.9c-13,19.7-29.5,35.2-49.4,46.5
-		c-19.9,11.3-43.5,16.9-70.9,16.9H82.6V79.5z"
-        />
-      </g>
-      <g id="B">
-        <path
-          d="M261,520.5h183c61.3,0,76.4-38.5,76.2-74.3c-0.1-16.4,0.2-114.2,0.2-114.2c-2.6-9.4-17.2-30.1-36.4-31
-		l0.2-0.3c0.5-0.7,1.2-0.8,1.9-0.9c2.8-0.1,29.6-20.2,34.2-30.2l0-154.1c-4.6-14.7-20.2-32.7-36.7-33.9c-15.6-1.1-21.3,0-39.8,0H261
-		V520.5z"
-        />
-      </g>
-      <g id="background">
-        <rect x="200.4" y="225.4" fill="#fff" width="7.1" height="149.9" />
-        <rect x="381.5" y="186.2" fill="#fff" width="6.6" height="77.1" />
-        <rect x="381.5" y="336.8" fill="#fff" width="6.6" height="77.1" />
-      </g>
-    </svg>
-    <div id="root" style="display: none;"></div>
+    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -70,33 +40,4 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script>
-    // Colors
-    var colors = ["red", "green", "gold"];
-
-    // Group
-    var D = document.getElementById("D");
-    var B = document.getElementById("B");
-
-    // Children
-
-    var dChildren = D.childNodes;
-    var bChildren = B.childNodes;
-
-    for (i = 0; i < dChildren.length; ++i) {
-      if (dChildren[i].nodeType === 1) {
-        randomizeColor(dChildren[i], colors[Math.floor(Math.random() * 3)]);
-      }
-    }
-
-    for (i = 0; i < bChildren.length; ++i) {
-      if (bChildren[i].nodeType === 1) {
-        randomizeColor(bChildren[i], colors[Math.floor(Math.random() * 3)]);
-      }
-    }
-
-    function randomizeColor(svgPath, color) {
-      svgPath.setAttribute("fill", color);
-    }
-  </script>
 </html>
