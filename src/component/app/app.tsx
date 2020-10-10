@@ -1,6 +1,6 @@
 import React from 'react';
-import DbsLogo from "./dbs-logo";
-import {colors} from "../lib/colors";
+import DbsLogo from "../dsb-logo/dbs-logo";
+import {colors} from "../../lib/colors";
 
 
 const App = () => {
