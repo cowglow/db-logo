@@ -1,12 +1,11 @@
 import React from "react";
-// import HocDbsLogo from "../hoc/hoc-dbs-logo";
-import styles from "./app.module.css"
+import styles from "./app.module.css";
+import HocDbsLogo from "../../hoc/hoc-dbs-logo";
 
 const App = () => (
   <React.Fragment>
     <div className={styles.root}>
-      working on it
-      {/* <HocDbsLogo /> */}
+      <HocDbsLogo />
     </div>
   </React.Fragment>
 );

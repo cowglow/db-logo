@@ -1,5 +1,3 @@
 .root {
-    border: 'thick solid purple';
-    /* display: grid; */
-    /* place-items: center; */
+     height: 100vh;
 }
