@@ -3,12 +3,6 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
   palette: {
-    primary: {
-      main: "#556cd6",
-    },
-    secondary: {
-      main: "#19857b",
-    },
     error: {
       main: red.A400,
     },
@@ -16,21 +10,23 @@ const theme = createMuiTheme({
       default: "#666666",
     },
   },
+  props: {
+    MuiFab: {
+      size: "large",
+    },
+  },
   overrides: {
     MuiAppBar: {
       root: {
-        top: "auto",
-        bottom: 0,
+        // top: "auto",
+        // bottom: 0,
       },
     },
     MuiFab: {
       root: {
         position: "absolute",
-        zIndex: 1,
-        top: -30,
-        left: 0,
-        right: 0,
-        margin: "0 auto",
+        bottom: "2rem",
+        right: "2rem",
       },
     },
   },
