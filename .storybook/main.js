@@ -11,9 +11,17 @@ module.exports = {
         prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
     },
   },
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stor@(y|ies).@(js|jsx|ts|tsx)"],
+  stories: [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stor@(y|ies).@(js|jsx|ts|tsx)",
+  ],
   addons: [
-    "@storybook/preset-create-react-app",
-    "@storybook/addon-controls"
+    "@storybook/addon-options",
+    {
+      name: "@storybook/addon-essentials",
+      options: {
+        actions: false,
+      },
+    },
   ],
 };

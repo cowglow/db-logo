@@ -5,6 +5,7 @@ import HocDbsLogo from "./hoc-dbs-logo";
 export default {
   title: "components",
   component: HocDbsLogo,
+  options: { showPanel: false },
 } as Meta;
 
 export const Hoc = () => <HocDbsLogo />;

@@ -1,5 +1,5 @@
 // .storybook/preview.js
 
 export const parameters = {
-  layout: 'centered',
+  layout: "centered",
 };
