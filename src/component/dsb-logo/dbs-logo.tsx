@@ -3,8 +3,8 @@ import React from "react";
 export interface DbsLogoProps {
   colorLeft: string;
   colorRight: string;
-  colorBorder: string;
   colorBackground: string;
+  colorBorder: string;
 }
 
 const DbsLogo: React.FC<DbsLogoProps> = ({
