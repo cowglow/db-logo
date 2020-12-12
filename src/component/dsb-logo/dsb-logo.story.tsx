@@ -20,14 +20,12 @@ export const Logo: Story<DbsLogoProps> = ({
   colorBackground = defaultColors.colorBackground,
   colorBorder = defaultColors.colorBorder,
 }) => (
-  <div style={{ width: "100%" }}>
-    <DbsLogo
-      colorLeft={colorLeft}
-      colorRight={colorRight}
-      colorBackground={colorBackground}
-      colorBorder={colorBorder}
-    />
-  </div>
+  <DbsLogo
+    colorLeft={colorLeft}
+    colorRight={colorRight}
+    colorBackground={colorBackground}
+    colorBorder={colorBorder}
+  />
 );
 
 Logo.storyName = "dbs-logo";
