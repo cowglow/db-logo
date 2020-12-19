@@ -8,6 +8,6 @@ export default {
   options: { showPanel: false },
 } as Meta;
 
-export const Hoc = () => <HocDbsLogo />;
+export const HocDbsLogoStory = () => <HocDbsLogo />;
 
-Hoc.storyName = "hoc-dbs-logo";
+HocDbsLogoStory.storyName = "hoc-dbs-logo";

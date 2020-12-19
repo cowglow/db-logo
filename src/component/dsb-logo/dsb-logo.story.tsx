@@ -14,7 +14,7 @@ export default {
   },
 } as Meta;
 
-export const Logo: Story<DbsLogoProps> = ({
+export const DbsLogoStory: Story<DbsLogoProps> = ({
   colorLeft = defaultColors.colorLeft,
   colorRight = defaultColors.colorRight,
   colorBackground = defaultColors.colorBackground,
@@ -28,4 +28,4 @@ export const Logo: Story<DbsLogoProps> = ({
   />
 );
 
-Logo.storyName = "dbs-logo";
+DbsLogoStory.storyName = "dbs-logo";
