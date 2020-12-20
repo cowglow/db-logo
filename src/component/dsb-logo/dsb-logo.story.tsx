@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import DbsLogo, { DbsLogoProps } from "./dbs-logo";
+import DbsLogo, { DbsLogoProps } from "./dsb-logo";
 import { defaultColors } from "../hoc-dbs-logo/hoc-dbs-logo";
 
 export default {

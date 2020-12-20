@@ -1,5 +1,5 @@
 import React from "react";
-import DbsLogo, { DbsLogoProps } from "../dsb-logo/dbs-logo";
+import DbsLogo, { DbsLogoProps } from "../dsb-logo/dsb-logo";
 import { colors } from "../../lib/colors";
 
 export const defaultColors = {
