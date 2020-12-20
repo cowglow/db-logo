@@ -13,7 +13,7 @@ import HocDbsLogo from "../hoc-dbs-logo/hoc-dbs-logo";
 const App = () => {
   const [active, updateDrawer] = React.useState<boolean>(false);
   return (
-    <Container>
+    <Container style={{ border: "thin solid red" }}>
       <AppBar position="fixed">
         <AppToolbar onOpen={() => updateDrawer(true)} />
         <AppDrawer open={active} onClose={() => updateDrawer(false)} />
